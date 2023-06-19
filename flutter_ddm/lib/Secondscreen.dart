@@ -10,7 +10,7 @@ class Secondscreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Segunda tela")),
       body: Container(
-          color: const Color.fromARGB(255, 2, 84, 224),
+          color: Color.fromARGB(255, 255, 45, 17),
           child: Center(
               child: ElevatedButton(
             style: ElevatedButton.styleFrom(padding: const EdgeInsets.all(20)),
