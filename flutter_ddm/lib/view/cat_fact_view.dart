@@ -38,7 +38,7 @@ class CatFactView extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const Firstscreen()));
                   },
-                  child: const Text("Ir para primeira tela"),
+                  child: const Text("To go CatFact"),
                 )
               ]);
             }))));
