@@ -33,7 +33,7 @@ class CatFactView extends StatelessWidget {
                 const SizedBox(height: 10.0),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pop(
                         context,
                         MaterialPageRoute(
                             builder: (context) => const Firstscreen()));

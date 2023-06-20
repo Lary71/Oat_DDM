@@ -7,19 +7,24 @@ class Firstscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("First Screen")),
-      backgroundColor: const Color.fromARGB(255, 28, 149, 248),
+      appBar: AppBar(title: const Text("Cats")),
+      backgroundColor: Color.fromARGB(255, 243, 244, 245),
       body: Container(
           color: const Color.fromARGB(255, 255, 255, 255),
-          child: Center(
-              child: ElevatedButton(
-            style: ElevatedButton.styleFrom(padding: const EdgeInsets.all(20)),
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const CatFactView()));
-            },
-            child: const Text("To go CatFact"),
-          ))),
+          child: Column(children: [
+            Image.asset('assets/welcome.png', width: 600),
+            ElevatedButton(
+              style:
+                  ElevatedButton.styleFrom(padding: const EdgeInsets.all(20)),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const CatFactView()));
+              },
+              child: const Text("To go CatFact"),
+            ),
+          ])),
     );
   }
 }
